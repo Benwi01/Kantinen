@@ -5,7 +5,11 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Kantinens menu for uge 45</h1>
+    <h1 class="display-2">Kantinens menu for uge 45</h1>
+</div>
+
+<div class="text-center">
+    <h1 class="display-6">Menu for Næste Uge</h1>
 </div>
 
 <!DOCTYPE html>
@@ -15,30 +19,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu for Næste Uge</title>
     <style>
+        /* General Body Styling */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fafafa;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            margin: 0;
         }
+
+        /* Title Styling */
+        h1 {
+            color: #f26b38; /* Warm orange */
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #1f8a70; /* Teal */
+            margin-top: 10px;
+            font-size: 1.5em;
+        }
+
+        /* Table Styling */
         table {
-            width: 100%;
+            width: 90%;
+            max-width: 900px;
+            margin: 30px auto;
             border-collapse: collapse;
-            margin: 20px 0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
         }
+
         th, td {
-            padding: 10px;
+            padding: 20px;
             text-align: left;
+            font-size: 1.1em;
             border: 1px solid #ddd;
         }
+
         th {
-            background-color: #f2f2f2;
+            background-color: #f26b38; /* Warm orange */
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
         }
+
+        /* Row Styling */
         tr:nth-child(even) {
-            background-color: #f9f9f9;
+            background-color: #e7f1f1; /* Light teal */
+        }
+
+        tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        /* Footer Styling */
+        .footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #6c757d;
         }
     </style>
 </head>
 <body>
-
-    <h2>Menu for Næste Uge</h2>
 
     <table>
         <thead>
@@ -60,7 +109,6 @@
         </tbody>
     </table>
 
-    
-
 </body>
 </html>
+
