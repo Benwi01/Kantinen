@@ -41,39 +41,26 @@
     <h2>Menu for Næste Uge</h2>
 
     <table>
-        <tr>
-            <th>Dag</th>
-            <th>Varm Ret</th>
-            <th>Kold Ret</th>
-        </tr>
-        <tr>
-            <td>Mandag</td>
-            <td>Kylling med ris</td>
-            <td>Tunsalat</td>
-        </tr>
-        <tr>
-            <td>Tirsdag</td>
-            <td>Lasagne</td>
-            <td>Pastasalat</td>
-        </tr>
-        <tr>
-            <td>Onsdag</td>
-            <td>Boller i karry</td>
-            <td>Æggesalat</td>
-        </tr>
-        <tr>
-            <td>Torsdag</td>
-            <td>Fiskefilet</td>
-            <td>Rugbrød med pålæg</td>
-        </tr>
-        <tr>
-            <td>Fredag</td>
-            <td>Frikadeller med kartofler</td>
-            <td>Kyllingesalat</td>
-        </tr>
+        <thead>
+            <tr>
+                <th>Dag</th>
+                <th>Varm Ret</th>
+                <th>Kold Ret</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.MenuItems)
+            {
+                <tr>
+                    <td>@item.Dag</td>
+                    <td>@item.Varmret</td>
+                    <td>@item.Koldret</td>
+                </tr>
+            }
+        </tbody>
     </table>
 
-    <div style="border: 1px solid #ddd;">Monner til 10kr</div>
+    
 
 </body>
 </html>
