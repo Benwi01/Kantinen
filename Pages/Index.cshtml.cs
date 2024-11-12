@@ -1,5 +1,4 @@
 using Azure.Data.Tables;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using IBAS_kantine.Models;
 using Azure;
